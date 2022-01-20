@@ -24,10 +24,16 @@
       <div class="col-6">{{ form.amount_remaining|as_crispy_field }}</div>
     </div>
     <!-- {{form|crispy}} -->
-    <input
+    <input 
       type="submit"
       value="add PrevLoan Detail"
-      class="btn btn-dark btn-block mt-3"
+      class="btn btn-dark mt-3"
+      style="margin-right: auto"
+    />
+    <input id="add" name="add"
+      type="submit"
+      value="add more Detail"
+      class="btn btn-dark mt-3"
       style="margin-right: auto"
     />
   </form>

@@ -11,7 +11,7 @@ def create_bankdetails_view(request,i):
         form = BankDetailsModelForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/dapp/prevloan/cPrevLoan/%i' % customer.id)
+            return redirect('/dapp/prevloan/ploanConfirm/%i' % customer.id)
 
     context={'form':form}
     return render(request,'DashboardApp/addBankDetails.html',context)
